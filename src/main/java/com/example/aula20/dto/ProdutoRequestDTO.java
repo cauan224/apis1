@@ -1,10 +1,9 @@
 package com.example.aula20.dto;
 
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
-public class ProdutoRequesteDTO {
+public class ProdutoRequestDTO {
     @NotBlank(message = "o nome é obrigadorio.")
     @Size(min = 3,message = "O nome tem que ter no minimo 3 caracteres.")
     @Size (max = 200,message = "O nome não deve ter mais que 200 caracteres.")

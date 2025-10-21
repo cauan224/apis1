@@ -2,7 +2,13 @@ package com.example.aula20.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ProdutoRequestDTO {
     @NotBlank(message = "o nome é obrigadorio.")
     @Size(min = 3,message = "O nome tem que ter no minimo 3 caracteres.")

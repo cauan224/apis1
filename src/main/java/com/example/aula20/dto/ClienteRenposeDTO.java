@@ -13,5 +13,4 @@ public class ClienteRenposeDTO {
     private String telefone;
     private String formaPagamento;
     private String endereco;
-
 }

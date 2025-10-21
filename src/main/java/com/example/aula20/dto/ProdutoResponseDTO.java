@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 
-public class ProdutoResposenseDTO {
+public class ProdutoResponseDTO {
     private String nome;
     private String lote;
     private String validade;

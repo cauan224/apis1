@@ -11,28 +11,25 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class ClienteRequestDTO {
-    @NotBlank (message = "o nome é obrigadorio.")
-    @Size (min = 3,message = "O nome tem que ter no minimo 3 caracteres.")
-    @Size (max = 200,message = "O nome não deve ter mais que 200 caracteres.")
+
+    @NotBlank(message = "O nome é obrigatório.")
+    @Size(min = 3, max = 200, message = "O nome deve ter entre 3 e 200 caracteres.")
     private String nome;
 
-    @NotBlank (message = "O email é obrigadorio.")
-    @Email(message = "deve ser um email valadido")
-    @Size(min = 10,message = "O E-emali nao deve ter mais de 10")
-    @Size(max = 200,message = "O e-email nao deve ter mais de 200 caracteres.")
+    @NotBlank(message = "O email é obrigatório.")
+    @Email(message = "Deve ser um email válido.")
+    @Size(min = 10, max = 200, message = "O email deve ter entre 10 e 200 caracteres.")
     private String email;
 
-    @NotBlank(message = "o numero é obrigadorio.")
-    @Size (min = 12,message = "O nome tem quer ter minimi 3 caracteres")
+    @NotBlank(message = "O telefone é obrigatório.")
+    @Size(min = 10, max = 15, message = "O telefone deve ter entre 10 e 15 caracteres.")
     private String telefone;
 
-    @NotBlank(message = "A Forma de pagamento é obrigadotia.")
-    @Size (min = 3,message = "O nome tem que ter no minimo 3 caracteres.")
+    @NotBlank(message = "A forma de pagamento é obrigatória.")
+    @Size(min = 3, max = 100, message = "A forma de pagamento deve ter entre 3 e 100 caracteres.")
     private String formaPagamento;
 
-    @NotBlank(message = "O endereco é obrigadotia.")
-    @Size (max = 100,message = "O nome tem que ter no maximo 3 caracteres.")
-    @Size(min = 10,message = "O minimo de 10")
+    @NotBlank(message = "O endereço é obrigatório.")
+    @Size(min = 10, message = "O endereço deve ter entre 10 e 100 caracteres.")
     private String endereco;
-
 }
